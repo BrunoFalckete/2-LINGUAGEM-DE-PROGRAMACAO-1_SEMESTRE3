@@ -5,6 +5,8 @@ public class Robo {
     private char direcao;
     private int pos_x;
     private int pos_y;
+    private int ant_x;
+    private int ant_y;
     private int qnt_casas;
 
 //METODO DE MOVIMENTACAO
@@ -26,7 +28,7 @@ public class Robo {
             case 'a':
                 pos_x = pos_x - qnt_casas;
             break;
-            
+
             default:
                 System.out.println("Direcao invalida !!");
             break;
@@ -34,10 +36,21 @@ public class Robo {
         return null;
     }
 
+//METODO DE GRAVAR POSICAO ANTERIOR
+    public Robo gravarPosicao(){
+
+        ant_x = this.pos_x;
+        ant_y = this.pos_y;
+
+        return null;
+    }
+
 //CONSTRUTOR
     public Robo(int pos_x, int pos_y){
         this.pos_x = 0;
         this.pos_y = 0;
+        this.ant_x = 0;
+        this.ant_y = 0;
     }
 
 // GETTERS E SETTERS
@@ -71,5 +84,21 @@ public class Robo {
 
     public void setQnt_casas(int qnt_casas) {
         this.qnt_casas = qnt_casas;
+    }
+
+    public int getAnt_x() {
+        return this.ant_x;
+    }
+
+    public void setAnt_x(int ant_x) {
+        this.ant_x = ant_x;
+    }
+
+    public int getAnt_y() {
+        return this.ant_y;
+    }
+
+    public void setAnt_y(int ant_y) {
+        this.ant_y = ant_y;
     }
 }
