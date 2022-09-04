@@ -27,7 +27,11 @@ public class App {
             robo.moverRobo(robo.getDirecao(), robo.getQnt_casas());
 
             System.out.println("-------------------------------------------------");
+<<<<<<< HEAD
             
+=======
+            System.out.println("\nPosicao anterior do robo:\tLinha: " + robo.getAnt_x() + "\tColuna: " + robo.getAnt_y());
+>>>>>>> 9467252 (First commit)
             System.out.println("\nPosicao atual do robo:\tLinha: " + robo.getPos_x() + "\tColuna: " + robo.getPos_y());
             System.out.println("-------------------------------------------------");;
             System.out.println("\tw - mover para cima\n\ts - mover para baixo\n\td - mover para direita\n\ta - mover para esquerda\n");
