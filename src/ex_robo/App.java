@@ -24,15 +24,12 @@ public class App {
             System.out.print("Digite quantas casas voce deseja movimentar: ");
             robo.setQnt_casas(ler.nextInt());
 
-            robo.moverRobo(robo.getDirecao(), robo.getQnt_casas());
-
             System.out.println("-------------------------------------------------");
-<<<<<<< HEAD
+            robo.gravarPosicao();
+
+            robo.moverRobo(robo.getDirecao(), robo.getQnt_casas());            
             
-=======
-            System.out.println("\nPosicao anterior do robo:\tLinha: " + robo.getAnt_x() + "\tColuna: " + robo.getAnt_y());
->>>>>>> 9467252 (First commit)
-            System.out.println("\nPosicao atual do robo:\tLinha: " + robo.getPos_x() + "\tColuna: " + robo.getPos_y());
+            System.out.println("\nPosicao atual do robo:\n\tLinha: " + robo.getPos_x() + "\tColuna: " + robo.getPos_y());
             System.out.println("-------------------------------------------------");;
             System.out.println("\tw - mover para cima\n\ts - mover para baixo\n\td - mover para direita\n\ta - mover para esquerda\n");
             System.out.println("-------------------------------------------------");

@@ -14,19 +14,19 @@ public class Robo {
 
         switch(direcao){
             case 'w':
-                pos_y = pos_y + qnt_casas;
+                this.pos_y = this.pos_y + qnt_casas;
             break;
 
             case 's':
-                pos_y = pos_y - qnt_casas;
+                this.pos_y = this.pos_y - qnt_casas;
             break;
 
             case 'd':
-                pos_x = pos_x + qnt_casas;
+                this.pos_x = this.pos_x + qnt_casas;
             break;
 
             case 'a':
-                pos_x = pos_x - qnt_casas;
+                this.pos_x = this.pos_x - qnt_casas;
             break;
 
             default:
@@ -41,6 +41,8 @@ public class Robo {
 
         ant_x = this.pos_x;
         ant_y = this.pos_y;
+
+        System.out.println("\nPosicao anterior do robo:\n\tLinha: " + ant_x + "\tColuna: " + ant_y);
 
         return null;
     }
