@@ -1,7 +1,7 @@
 package ex_robo;
 
-public class robo {
-
+public class Robo {
+    
     private char direcao;
     private int pos_x;
     private int pos_y;
@@ -26,7 +26,7 @@ public class robo {
             case 'a':
                 pos_x = pos_x - qnt_casas;
             break;
-
+            
             default:
                 System.out.println("Direcao invalida !!");
             break;
