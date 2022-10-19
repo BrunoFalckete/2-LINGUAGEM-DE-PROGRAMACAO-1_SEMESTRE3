@@ -42,19 +42,14 @@ public class ListaDuplamenteLigada {
         public static Lista addInicio(Lista l, int val) {
           No n1 = new No();
           n1.info = val;
+          n1.prox = l.inicio;
+          l.inicio.ant = n1;
+          l.inicio = n1;
       
           if (isEmpty(l)) {
-            n1.prox = l.inicio;
-            n1.ant = l.inicio;
-            l.inicio = n1;
             l.fim = n1;
-            l.tam++;
-            return l;
           }
       
-          n1.prox = l.inicio;
-          n1.ant = null;
-          l.inicio = n1;
           l.tam++;
           return l;
         }
