@@ -48,6 +48,7 @@ public class ListaDuplamenteLigada {
             n1.ant = l.inicio;
             l.inicio = n1;
             l.fim = n1;
+            l.tam++;
             return l;
           }
       
