@@ -1,4 +1,4 @@
-package ordenacao;
+package lp.ordenacao;
 
 import java.util.Random;
 import java.util.Scanner;
